@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JS-one</title>
+        <style>
+            body{
+                text-align:center;color:blue;
+                background-color: antiquewhite;
+                background: url("1.jpg");
+                background-size: 1000px 800px;
+                
+            }
+        h1{
+            color:rgb(55, 124, 124);
+        }
+        .foot{
+            position:absolute;
+            bottom: 20px;
+            right:20px;
+            color:rgb(16, 48, 48);
+            font-size:25px;
+        }
+        </style>
+        <script>
+           function cant(){
+                x=document.getElementById("demo")
+                x.style.color="#ff0000";
+            }
+            function hha(){
+                document.getElementById("demo").innerHTML=Date();
+                document.write("都几点了！             ");
+                document.write("快睡吧你！");
+            }
+            function question1(){
+                var x=document.getElementById("demo1").value;
+                if(x=="是"){
+                    alert("康王防脱发了解一下~");
+                }
+               else{
+                   alert("晚安！o(*￣▽￣*)ブ");
+               }
+            }
+
+        </script>
+    </head>
+    <body>
+        <br><br>
+        <h1>🌙🌙🌙🌙🌙🌙🌙🌙</h1>
+        <h1>是不是最近易失眠？</h1>
+        <input id="demo1" type="text">
+        <button type="button" onclick="question1()">是不是？</button><br><br><br><br><br><br>
+        <br><br>
+        <h1 id="demo">不眠之夜易脱发！</h1>
+        <p id="demo"></p>
+        <button type="button" onclick="cant()">睡不着么？</button>
+        <button type="button" onclick="hha()">睡不着！</button>
+  
+        <div class="foot">
+                <span class="one">栾晓宇</span><br />
+               <span class="one"> -第二周周报总结</span>
+        </div>
+    </body>
+</html>
+
